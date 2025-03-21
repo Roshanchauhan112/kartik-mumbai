@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝐊𝐀𝐑𝐓𝐈𝐊 𝐌𝐔𝐌𝐁𝐀𝐈 🇮🇳</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff0080, #ff4d4d);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.459);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      }
+
+    h1 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .logos img {
+      width: 80px;
+      height: 80px;
+      margin: 10px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .countdown {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .join-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .stats,
+    .promo {
+      font-size: 16px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    footer {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .highlight {
+      color: #28a745;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="profil.jpg" alt="Diya Toss Queen" />
+    </div>
+
+    <!-- Title and Subtitle -->
+    <h1>𝐊𝐀𝐑𝐓𝐈𝐊 𝐌𝐔𝐌𝐁𝐀𝐈 🇮🇳</h1>
+    <p class="subtitle">Cricket trading ki duniya ka queen 👑💰</p>
+
+    <!-- Logos Section -->
+    <div style="position: relative; padding: 0px 50px;">
+      <div class="logos" style="display: flex;flex-direction: column; justify-content: space-between; gap:40px; ">
+      <div style="display: flex; justify-content: space-between;">
+        <img src="t20.png" alt="T20 Cricket" />
+        <img src="ipl.jpeg" alt="IPL" />
+      </div>
+      <div style="display: flex;  justify-content: space-between;">
+        <img src="bbl.png" alt="BBL" />
+        <img src="psl.png" alt="PSL" />
+      </div>
+      </div>
+      <!-- Countdown Timer -->
+      <div class="countdown" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <span id="timer">30</span>
+      </div>
+    </div>
+
+
+
+    <!-- Join Button -->
+    <a href="https://t.me/+7UyI0FoSYMM0Yzg1" class="join-btn">JOIN DIYA TOSS QUEEN CHANNEL</a>
+
+    <!-- Stats Section -->
+    <p class="stats">
+      BBL 44/43 PASS | IPL 74/73 PASS | T20 WORLD CUP 55/53 PASS
+    </p>
+    <p class="promo">
+      💵💵 Join karo lakho kamao 💵💵 <br />
+      💰 Free Free Free 💰
+    </p>
+
+    <!-- Footer -->
+    <footer>
+      ADVERTISEMENT BY <span class="highlight">DigitalRanjan</span>
+    </footer>
+  </div>
+
+  <script>
+    let timer = document.getElementById("timer");
+    let count = 30; // Start from 30 seconds
+    const redirectUrl = "https://t.me/+7UyI0FoSYMM0Yzg1"; // Redirect URL
+
+    function updateTimer() {
+      if (count > 0) {
+        count--;
+        timer.textContent = count;
+      } else {
+        clearInterval(timerInterval);
+        window.location.href = redirectUrl;
+      }
+    }
+
+    let timerInterval = setInterval(updateTimer, 1000);
+  </script>
+</body>
+
+</html>
